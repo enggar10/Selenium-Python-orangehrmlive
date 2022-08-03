@@ -66,15 +66,17 @@ class TestLogin(unittest.TestCase):
         time.sleep(1)
         driver.find_element(By.NAME,"jobTitle[jobDescription]").send_keys(desk)
         time.sleep(1)
-        driver.maximize_window()
+       
         #s = driver.find_element_by_xpath("//input[@type='file']")
         s= driver.find_element(By.ID,"jobTitle_jobSpec")
         #file path specified with send_keys
-        s.send_keys("C:\Users\Enggar\python\panda.jpg")
+        s.send_keys("C:\\Users\\Enggar\\python\\panda.jpg")
         time.sleep(15)
         driver.find_element(By.NAME,"jobTitle[note]").send_keys(note)
         time.sleep(1)
          
+        driver.find_element(By.NAME,"btnSave").click()
+        time.sleep(3)
 
     def tearDown(self): 
         self.driver.close()
