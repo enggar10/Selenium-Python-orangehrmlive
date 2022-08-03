@@ -17,13 +17,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 url="https://opensource-demo.orangehrmlive.com/"
 username="Admin"
 password="admin123"
-title="manager"
-desk="mengerjakan semua tugas pegawai"
-note="isilah"
-
-#driver = webdriver.Chrome(executable_path="C:\Users\Enggar\python\chromedriver.exe")
-
-
 
 
 class TestLogin(unittest.TestCase):
@@ -48,35 +41,49 @@ class TestLogin(unittest.TestCase):
 
         self.driver.implicitly_wait(0.5)
         a = ActionChains(self.driver)
-        m = driver.find_element(By.ID,"menu_admin_viewAdminModule")
+        m = driver.find_element(By.ID,"menu_leave_viewLeaveModule")
         a.move_to_element(m).perform()
         #identify sub menu element
-        n = driver.find_element(By.ID,"menu_admin_Job")
-        a.move_to_element(n).perform()
-        o = driver.find_element(By.ID,"menu_admin_viewJobTitleList")
-        #hover over element and click
-        a.move_to_element(o).click().perform()
+        
+        n = driver.find_element(By.ID,"menu_leave_viewMyLeaveList")
+        a.move_to_element(n).click().perform()
+       
         time.sleep(2)
 
+        d=driver.find_element(By.ID,"calFromDate").click()
+        time.sleep(5)
         
-        driver.find_element(By.NAME,"btnAdd").click()
-        time.sleep(3)
+        #driver.switch_to.frame(d);
+        #identify element inside frame
+        d= driver.find_element(By.ID,"ui-datepicker-div")
+        d.click()
+        time.sleep(10)
+        #identify list of all dates
 
-        driver.find_element(By.NAME,"jobTitle[jobTitle]").send_keys(title)
+        print('look')
+
         time.sleep(1)
-        driver.find_element(By.NAME,"jobTitle[jobDescription]").send_keys(desk)
+
+        d=driver.find_element(By.ID,"calToDate").click()
+        time.sleep(5)
+
+        print('from')
+
+
+       # driver.switch_to.frame(d);
+        #identify element inside frame
+        d= driver.find_element(By.ID,"ui-datepicker-div")
+        d.click()
+        print('to date')
         time.sleep(1)
-       
-        #s = driver.find_element_by_xpath("//input[@type='file']")
-        s= driver.find_element(By.ID,"jobTitle_jobSpec")
-        #file path specified with send_keys
-        s.send_keys("C:\\Users\\Enggar\\python\\panda.jpg")
-        time.sleep(15)
-        driver.find_element(By.NAME,"jobTitle[note]").send_keys(note)
-        time.sleep(1)
-         
-        driver.find_element(By.NAME,"btnSave").click()
+
+        #driver.find_element(By.ID,"leaveList_chkSearchFilter_checkboxgroup_allcheck").click()
+        #time.sleep(1)
+        
+        driver.find_element(By.ID,"btnSearch").click()
         time.sleep(3)
+        
+         
 
     def tearDown(self): 
         self.driver.close()
