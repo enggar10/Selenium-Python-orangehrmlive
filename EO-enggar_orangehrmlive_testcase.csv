@@ -1,0 +1,934 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases
+,,,,,,,,,,,,,,,,,,,,1,,Login,1
+,,,,,,,,,,,,,,,,,,,,2,,Admin,1
+,,,,,,,,,,,,,,,,,,,,3,,PIM,1
+,,,,,,,,,,,,,,,,,,,,4,,Leave,1
+,,,,,,,,,,,,,,,,,,,,5,,Time,1
+,,,,,,,,,,,,,,,,,,,,6,,Recruitment,1
+,,,,,,,,,,,,,,,,,,,,7,,"My Info",1
+,,,,,,,,,,,,,,,,,,,,8,,Performance,1
+,,,,,,,,,,,,,,,,,,,,10,,Directory,1
+,,,,,,,,,,,,,,,,,,,,11,,Maintenance,1
+,,,,,,,,,,,,,,,,,,,,12,,Buzz,1
+1,login_success,,,,,medium,normal,functional,positive,is-not-automated,actual,no,e2e,gherkin,"1. Given Input username
+2. And Input password
+3. Then Click Button Login
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. 
+",,,1,,Login,
+2,login_error,,,,,medium,normal,functional,negative,is-not-automated,actual,no,e2e,gherkin,"1. Given Input username
+2. And Input password
+3. Then Click button login
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. 
+",,,1,,Login,
+6,"Forgot Password",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input username
+2. Then Click button reset password
+","1. 
+2. 
+","1. 
+2. 
+",,,1,,Login,
+3,"User Management","Search System User",Login,,,medium,normal,functional,positive,is-not-automated,actual,no,e2e,gherkin,"1. Given Input username
+2. Given Select user role
+3. Given Input employee name
+4. Given Select status
+5. Then Click Search
+","1. 
+2. 
+3. 
+4. 
+5. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+",,,2,,Admin,
+4,"Add Users",,Login,,,high,normal,functional,positive,is-not-automated,actual,no,e2e,gherkin,"1. Given Click button Add
+2. Given Select user role
+3. Given Input employee name
+4. Given Input username
+5. Given Input status
+6. Given Input password
+7. Given Input confirm password
+8. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+",,,2,,Admin,
+5,"Delete users",,Login,,,low,normal,functional,positive,is-not-automated,actual,no,e2e,gherkin,"1. Given Check users that want to delete
+2. Then Click button delete
+","1. 
+2. 
+","1. 
+2. 
+",,,2,,Admin,
+7,"Add job titles",,Login,,,medium,normal,functional,undefined,is-not-automated,actual,no,e2e,gherkin,"1. Given Click button Add
+2. Given Input job title
+3. And Input job description
+4. And Upload file
+5. And Input note
+6. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+",,,2,,Admin,
+8,"Delete job title",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Checklist job title that what to delete
+2. Then Click button delete
+","1. 
+2. 
+","1. 
+2. 
+",,,2,,Admin,
+9,"Add pay grades",,Login,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button add
+2. Given Input name pay grade
+3. Then CLick button save
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. 
+",,,2,,Admin,
+10,"Delete pay grades",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Checklist the name want to delete
+2. Then Click button delete
+","1. 
+2. 
+","1. 
+2. 
+",,,2,,Admin,
+11,"Add general information",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button edit
+2. Given Input organization name
+3. And Input tax ID
+4. And Input registration number
+5. And Input phone
+6. And Input email
+7. And Input fax
+8. And Input address street 1
+9. And Input address street 2
+10. And Input city
+11. And Input state/province
+12. And Input zip
+13. And Input country
+14. And Input note
+15. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+",,,2,,Admin,
+12,"Search Locations",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input location name
+2. And Input city
+3. And Select country
+4. Then Click button search
+","1. 
+2. 
+3. 
+4. 
+","1. 
+2. 
+3. 
+4. 
+",,,2,,Admin,
+13,"Add location",,Login,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input name
+2. And Select country
+3. And Input state/province
+4. And Input city
+5. And Input address
+6. And Input zip/postal code
+7. And Input phone
+8. And Input fax
+9. And Input notes
+10. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+",,,2,,Admin,
+14,"Add nationalities",,Login,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button add
+2. Given Input nationality
+3. Then Click button save
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. 
+",,,2,,Admin,
+15,"Add corporate branding",,Login,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select color for primary color
+2. And Select color for secondary color
+3. And Select color for primary button color
+4. And Select color for secondary button color
+5. And Select image for client logo
+6. And Select image for login banner
+7. And Check/uncheck Social Media Images
+8. Then CLick button publish
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+",,,2,,Admin,
+16,"Edit configure PIM",,Login,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given CLick button edit
+2. Given Check/Uncheck Show Nick Name, Smoker and Military Service in Personal Details
+3. And Check/Uncheck Show SSN field in Personal Details
+4. And Check/Uncheck Show SIN field in Personal Details
+5. And Check/Uncheck Show US Tax Exemptions menu
+6. And Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+",,,3,,PIM,
+17,"Add Custom Fields",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button add
+2. Given Input field name
+3. And Select screen
+4. And Select type
+5. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+",,,3,,PIM,
+18,"Delete Custom Fields",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Check the field want to delete
+2. Then Click button delete
+","1. 
+2. 
+","1. 
+2. 
+",,,3,,PIM,
+19,"Search employee information",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input employee name
+2. And Input employee ID
+3. And Select employee status
+4. And Select include
+5. And Input supervisor name
+6. And Select job title
+7. And Select sub unit
+8. Then CLick button search
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+",,,3,,PIM,
+20,"Add employee information",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button add
+2. Given Input first name
+3. And Input middle name
+4. And Input last name
+5. And Input employee ID
+6. And Upload photograph
+7. And Check/uncheck Create Login Details
+8. Then Clik button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+",,,3,,PIM,
+21,"Search leave list",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select date for start leave
+2. And Select date for end leave
+3. And Check Show Leave with Status
+4. And Input employee name
+5. And Select sub unit
+6. And Check/uncheck Include Past Employees
+7. Then Click button search
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+",,,4,,Leave,
+22,"Add Leave Entitlement",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Check Add to Multiple Employees
+2. And Select employee
+3. And Select sub unit
+4. And Select leave type
+5. And Select leave period
+6. And Input Entitlement
+7. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+",,,4,,Leave,
+23,"Generate Leave Entitlements and Usage Report",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select Generate report for ""Leave Type""
+2. And Select  leave type
+3. And Select date from to leave
+4. And Select date end to leave
+5. And Select job title
+6. And Select location
+7. And Select sub unit
+8. And Check/uncheck The Voice All Stars Indonesia
+9. Then Click button view
+10. But Select Generate report for ""Employee""
+11. Given Input employee name
+12. And Select date from
+13. Then Click button view
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+",,,4,,Leave,
+24,"Add leave period",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button edit
+2. Given Select start month period
+3. And Select start date period
+4. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+","1. 
+2. 
+3. 
+4. 
+",,,4,,Leave,
+25,"Add leave type",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button add
+2. Given Input name leave type
+3. Then Click button save
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. 
+",,,4,,Leave,
+26,"Assign leave",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input employee name
+2. And Select leave type
+3. And Select from date
+4. And Select end date
+5. And Input comment
+6. Then Click button assign
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+",,,4,,Leave,
+27,"My Timesheet",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select Timesheet for Week
+2. And Click link Add Timesheet
+3. And Select a Day to Create Timesheet
+4. Then Click button OK
+5. Given Click button edit
+6. And Input project name
+7. And Input activity name
+8. And Input text
+9. And Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+",,,5,,Time,
+28,"Employee timesheet",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input employee name
+2. Then Click button view
+","1. 
+2. 
+","1. 
+2. 
+",,,5,,Time,
+29,"Timesheet action",,"Employee timesheet",,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Choose employee name in Timesheets Pending Action
+2. Given Click link view on the employee name
+3. Given Input coment for timesheet action
+4. Then Click button Accept or Reject
+","1. 
+2. 
+3. 
+4. 
+","1. 
+2. 
+3. 
+4. 
+",,,5,,Time,
+30,"My Attendance Records",,Login,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select date want to know about My Attendance Records
+","1. 
+","1. 
+",,,5,,Time,
+31,"Punch In/Out",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select date
+2. And Input time
+3. And Input note
+4. Then Click button In
+","1. 
+2. 
+3. 
+4. 
+","1. 
+2. 
+3. 
+4. 
+",,,5,,Time,
+32,"Project report",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select project name
+2. And Select project date from
+3. And Select project date to
+4. And Check/uncheck Only Include Approved Timesheets
+5. Then Click button View
+","1. 
+2. 
+3. 
+4. 
+5. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+",,,5,,Time,
+33,"Employee Report",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select employee name
+2. And Sleect project name
+3. And Select activity name
+4. And Select project date from
+5. And Select project date to
+6. And Check/uncheck Only Include Approved Timesheets
+7. Then Click button view
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+",,,5,,Time,
+34,"Add customer",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button add
+2. And Input name
+3. And Input description
+4. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+","1. 
+2. 
+3. 
+4. 
+",,,5,,Time,
+35,"Search candidates",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select Job title
+2. And Select vacancy
+3. And Sleect hiting manager
+4. And Select status
+5. And Input candidate name
+6. And Input keywords
+7. And Select Date of Application from
+8. Given Select Date of Application to
+9. Given Select method of application
+10. Then Click button search
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+",,,6,,Recruitment,
+36,"Add candidate",,Candidates,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input first name of candiate
+2. And Input middle name of candiate
+3. And Input last name of candiate
+4. And Input email
+5. And Input contact no
+6. And Select job vacancy
+7. And Upload resume
+8. And Input keywords
+9. And Input comment
+10. And Select Date of Application
+11. And Ckeck/uncheck Consent to keep data
+12. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+",,,6,,Recruitment,
+37,"Search vacancies",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select job title
+2. And Select vacancy
+3. And Select hiring manager
+4. And Select status
+5. Then Click button search
+","1. 
+2. 
+3. 
+4. 
+5. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+",,,6,,Recruitment,
+38,"Add vacancy",,Vancancies,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select job title
+2. And Input vacancy name
+3. And Input hiring manager
+4. And Input Number of Positions
+5. And Input description
+6. And CHeck/uncheck publish in RSS feed(1) and web page(2)
+7. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+",,,6,,Recruitment,
+39,"Edit personal details",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button edit for personal details
+2. Given Input first name
+3. And Input middle name
+4. And Input last name
+5. And Input employee ID
+6. And Input other ID
+7. And Input Driver's License Number
+8. And Input License Expiry Date
+9. And Input SSN Number
+10. And Input SIN number
+11. And Choose gender
+12. And Select marital status
+13. And Select nationality
+14. And Select date of birth
+15. And Input nick name
+16. And Input Military Service
+17. And Check/uncheck smoker
+18. Then Click button save personal details
+19. Then Click button edit for custom fields
+20. Given Select Blood Type
+21. Then CLick button save custom fields
+22. Then Click button add attachment
+23. Given Upload Select File
+24. And Input comment
+25. Then Click button upload attachment
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+16. 
+17. 
+18. 
+19. 
+20. 
+21. 
+22. 
+23. 
+24. 
+25. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+16. 
+17. 
+18. 
+19. 
+20. 
+21. 
+22. 
+23. 
+24. 
+25. 
+",,,7,,"My Info",
+40,"Contact details",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Click button edit contact details
+2. Given Input Address Street 1
+3. And Input Address Street 2
+4. And Input city
+5. And Input state/province
+6. And Input zip/postal code
+7. And Select country
+8. And Input home telephone
+9. And Input mobile
+10. And Input Work Telephone
+11. And Input work email
+12. And Input other email
+13. Then Click button save
+14. Then Click button add attachment
+15. Given Upload attachment
+16. And Input comment
+17. Then Click button upload
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+16. 
+17. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+16. 
+17. 
+",,,7,,"My Info",
+41,"Search KPIs",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select job title
+2. Then Click button search
+","1. 
+2. 
+","1. 
+2. 
+",,,8,,Performance,
+42,"Add Key Performance Indicator",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Select job title
+2. And Select Key Performance Indicator
+3. And Input Minimum Rating
+4. And Input Maximum Rating
+5. And Check/uncheck Make Default Scale
+6. Then Click button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+",,,8,,Performance,
+43,"Search Performanc Review",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input employee name
+2. And Select job title
+3. And Select status
+4. And Select from date
+5. And Select to date
+6. And Input reviewer
+7. Then Click button search
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+",,,8,,Performance,
+44,"Add reviewer",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given INput Supervisor Reviewer
+2. And Select Work Period Start Date
+3. And Select Work Period End Date
+4. And Select due date
+5. Then CLick button save
+","1. 
+2. 
+3. 
+4. 
+5. 
+","1. 
+2. 
+3. 
+4. 
+5. 
+",,,8,,Performance,
+45,Directory,,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input name
+2. And Select job title
+3. And Select location
+4. Then Click button search
+","1. 
+2. 
+3. 
+4. 
+","1. 
+2. 
+3. 
+4. 
+",,,10,,Directory,
+46,"Purge Employee Records",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input verifiy password
+2. Then Click button verify
+3. Then Input Past Employee
+4. Then Click button search
+","1. 
+2. 
+3. 
+4. 
+","1. 
+2. 
+3. 
+4. 
+",,,11,,Maintenance,
+47,"Update status",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input post description
+2. Then CLick button post
+","1. 
+2. 
+","1. 
+2. 
+",,,12,,Buzz,
+48,"Upload images",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input description about image
+2. And Select images
+3. Then CLick button post
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. 
+",,,12,,Buzz,
+49,"Share video",,,,,undefined,normal,other,undefined,is-not-automated,actual,no,unknown,gherkin,"1. Given Input link video want to post
+","1. 
+","1. 
+",,,12,,Buzz,

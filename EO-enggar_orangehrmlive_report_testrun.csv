@@ -1,0 +1,1060 @@
+case_id,title,suite,suite_id,assignee,time_spent_ms,status,finish_time,steps,steps_input_data,steps_expected_result,steps_status,comment,priority,severity,automation,type,tags,step_comments,case_parameter
+1,login_success,Login,1,"Enggar Frisa",50000,Passed,"2022-08-03 10:26:00","1. Given Input username
+2. And Input password
+3. Then Click Button Login
+","
+
+
+","
+
+
+","1. Passed
+2. Passed
+3. Passed
+",,Medium,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+2,login_error,Login,1,"Enggar Frisa",27000,Passed,"2022-08-03 10:26:36","1. Given Input username
+2. And Input password
+3. Then Click button login
+","
+
+
+","
+
+
+","1. Passed
+2. Passed
+3. Passed
+",,Medium,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+6,"Forgot Password",Login,1,"Enggar Frisa",27000,Passed,"2022-08-03 10:26:38","1. Given Input username
+2. Then Click button reset password
+","
+
+","
+
+","1. Passed
+2. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. ",
+3,"User Management",Admin,2,"Enggar Frisa",11000,Passed,"2022-08-03 10:26:41","1. Given Input username
+2. Given Select user role
+3. Given Input employee name
+4. Given Select status
+5. Then Click Search
+","
+
+
+
+
+","
+
+
+
+
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Passed
+",,Medium,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. 
+5. ",
+4,"Add Users",Admin,2,"Enggar Frisa",15000,Passed,"2022-08-03 10:26:43","1. Given Click button Add
+2. Given Select user role
+3. Given Input employee name
+4. Given Input username
+5. Given Input status
+6. Given Input password
+7. Given Input confirm password
+8. Then Click button save
+","
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Passed
+6. Passed
+7. Passed
+8. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. ",
+5,"Delete users",Admin,2,"Enggar Frisa",7000,Passed,"2022-08-03 10:26:45","1. Given Check users that want to delete
+2. Then Click button delete
+","
+
+","
+
+","1. Passed
+2. Passed
+",,Low,Normal,"Not automated",Functional,,"1. 
+2. ",
+7,"Add job titles",Admin,2,"Enggar Frisa",11000,Passed,"2022-08-03 10:26:47","1. Given Click button Add
+2. Given Input job title
+3. And Input job description
+4. And Upload file
+5. And Input note
+6. Then Click button save
+","
+
+
+
+
+
+","
+
+
+
+
+
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Passed
+6. Passed
+",,Medium,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. 
+5. 
+6. ",
+8,"Delete job title",Admin,2,"Enggar Frisa",5000,Passed,"2022-08-03 10:26:48","1. Given Checklist job title that what to delete
+2. Then Click button delete
+","
+
+","
+
+","1. Passed
+2. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. ",
+9,"Add pay grades",Admin,2,"Enggar Frisa",6000,Passed,"2022-08-03 10:26:50","1. Given Click button add
+2. Given Input name pay grade
+3. Then CLick button save
+","
+
+
+","
+
+
+","1. Passed
+2. Passed
+3. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. 
+3. ",
+10,"Delete pay grades",Admin,2,"Enggar Frisa",5000,Passed,"2022-08-03 10:26:53","1. Given Checklist the name want to delete
+2. Then Click button delete
+","
+
+","
+
+","1. Passed
+2. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. ",
+11,"Add general information",Admin,2,"Enggar Frisa",23000,Passed,"2022-08-03 10:26:55","1. Given Click button edit
+2. Given Input organization name
+3. And Input tax ID
+4. And Input registration number
+5. And Input phone
+6. And Input email
+7. And Input fax
+8. And Input address street 1
+9. And Input address street 2
+10. And Input city
+11. And Input state/province
+12. And Input zip
+13. And Input country
+14. And Input note
+15. Then Click button save
+","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Passed
+6. Passed
+7. Passed
+8. Passed
+9. Passed
+10. Passed
+11. Passed
+12. Passed
+13. Passed
+14. Passed
+15. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. ",
+12,"Search Locations",Admin,2,"Enggar Frisa",9000,Passed,"2022-08-03 10:26:57","1. Given Input location name
+2. And Input city
+3. And Select country
+4. Then Click button search
+","
+
+
+
+","
+
+
+
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. 
+3. 
+4. ",
+13,"Add location",Admin,2,"Enggar Frisa",14000,Passed,"2022-08-03 10:26:59","1. Given Input name
+2. And Select country
+3. And Input state/province
+4. And Input city
+5. And Input address
+6. And Input zip/postal code
+7. And Input phone
+8. And Input fax
+9. And Input notes
+10. Then Click button save
+","
+
+
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+
+
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Passed
+6. Passed
+7. Passed
+8. Passed
+9. Passed
+10. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. ",
+14,"Add nationalities",Admin,2,"Enggar Frisa",7000,Passed,"2022-08-03 10:27:01","1. Given Click button add
+2. Given Input nationality
+3. Then Click button save
+","
+
+
+","
+
+
+","1. Passed
+2. Passed
+3. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. 
+3. ",
+15,"Add corporate branding",Admin,2,"Enggar Frisa",151000,Passed,"2022-08-03 10:29:06","1. Given Select color for primary color
+2. And Select color for secondary color
+3. And Select color for primary button color
+4. And Select color for secondary button color
+5. And Select image for client logo
+6. And Select image for login banner
+7. And Check/uncheck Social Media Images
+8. Then CLick button publish
+","
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Passed
+6. Passed
+7. Passed
+8. Passed
+",,"Not set",Normal,"Not automated",Other,,"1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. ",
+16,"Edit configure PIM",PIM,3,"Enggar Frisa",2000,Passed,"2022-08-03 10:26:20","1. Given CLick button edit
+2. Given Check/Uncheck Show Nick Name, Smoker and Military Service in Personal Details
+3. And Check/Uncheck Show SSN field in Personal Details
+4. And Check/Uncheck Show SIN field in Personal Details
+5. And Check/Uncheck Show US Tax Exemptions menu
+6. And Click button save
+","
+
+
+
+
+
+","
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+17,"Add Custom Fields",PIM,3,"Enggar Frisa",5000,Passed,"2022-08-03 10:29:16","1. Given Click button add
+2. Given Input field name
+3. And Select screen
+4. And Select type
+5. Then Click button save
+","
+
+
+
+
+","
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+18,"Delete Custom Fields",PIM,3,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:18","1. Given Check the field want to delete
+2. Then Click button delete
+","
+
+","
+
+",,,"Not set",Normal,"Not automated",Other,,,
+19,"Search employee information",PIM,3,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:21","1. Given Input employee name
+2. And Input employee ID
+3. And Select employee status
+4. And Select include
+5. And Input supervisor name
+6. And Select job title
+7. And Select sub unit
+8. Then CLick button search
+","
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+20,"Add employee information",PIM,3,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:23","1. Given Click button add
+2. Given Input first name
+3. And Input middle name
+4. And Input last name
+5. And Input employee ID
+6. And Upload photograph
+7. And Check/uncheck Create Login Details
+8. Then Clik button save
+","
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+21,"Search leave list",Leave,4,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:25","1. Given Select date for start leave
+2. And Select date for end leave
+3. And Check Show Leave with Status
+4. And Input employee name
+5. And Select sub unit
+6. And Check/uncheck Include Past Employees
+7. Then Click button search
+","
+
+
+
+
+
+
+","
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+22,"Add Leave Entitlement",Leave,4,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:27","1. Given Check Add to Multiple Employees
+2. And Select employee
+3. And Select sub unit
+4. And Select leave type
+5. And Select leave period
+6. And Input Entitlement
+7. Then Click button save
+","
+
+
+
+
+
+
+","
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+23,"Generate Leave Entitlements and Usage Report",Leave,4,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:30","1. Given Select Generate report for ""Leave Type""
+2. And Select  leave type
+3. And Select date from to leave
+4. And Select date end to leave
+5. And Select job title
+6. And Select location
+7. And Select sub unit
+8. And Check/uncheck The Voice All Stars Indonesia
+9. Then Click button view
+10. But Select Generate report for ""Employee""
+11. Given Input employee name
+12. And Select date from
+13. Then Click button view
+","
+
+
+
+
+
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+24,"Add leave period",Leave,4,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:32","1. Given Click button edit
+2. Given Select start month period
+3. And Select start date period
+4. Then Click button save
+","
+
+
+
+","
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+25,"Add leave type",Leave,4,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:34","1. Given Click button add
+2. Given Input name leave type
+3. Then Click button save
+","
+
+
+","
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+26,"Assign leave",Leave,4,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:36","1. Given Input employee name
+2. And Select leave type
+3. And Select from date
+4. And Select end date
+5. And Input comment
+6. Then Click button assign
+","
+
+
+
+
+
+","
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+27,"My Timesheet",Time,5,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:38","1. Given Select Timesheet for Week
+2. And Click link Add Timesheet
+3. And Select a Day to Create Timesheet
+4. Then Click button OK
+5. Given Click button edit
+6. And Input project name
+7. And Input activity name
+8. And Input text
+9. And Click button save
+","
+
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+28,"Employee timesheet",Time,5,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:40","1. Given Input employee name
+2. Then Click button view
+","
+
+","
+
+",,,"Not set",Normal,"Not automated",Other,,,
+29,"Timesheet action",Time,5,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:42","1. Given Choose employee name in Timesheets Pending Action
+2. Given Click link view on the employee name
+3. Given Input coment for timesheet action
+4. Then Click button Accept or Reject
+","
+
+
+
+","
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+30,"My Attendance Records",Time,5,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:44","1. Given Select date want to know about My Attendance Records
+","
+","
+",,,"Not set",Normal,"Not automated",Other,,,
+31,"Punch In/Out",Time,5,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:46","1. Given Select date
+2. And Input time
+3. And Input note
+4. Then Click button In
+","
+
+
+
+","
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+32,"Project report",Time,5,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:47","1. Given Select project name
+2. And Select project date from
+3. And Select project date to
+4. And Check/uncheck Only Include Approved Timesheets
+5. Then Click button View
+","
+
+
+
+
+","
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+33,"Employee Report",Time,5,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:49","1. Given Select employee name
+2. And Sleect project name
+3. And Select activity name
+4. And Select project date from
+5. And Select project date to
+6. And Check/uncheck Only Include Approved Timesheets
+7. Then Click button view
+","
+
+
+
+
+
+
+","
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+34,"Add customer",Time,5,"Enggar Frisa",0,Passed,"2022-08-03 10:29:51","1. Given Click button add
+2. And Input name
+3. And Input description
+4. Then Click button save
+","
+
+
+
+","
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+35,"Search candidates",Recruitment,6,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:53","1. Given Select Job title
+2. And Select vacancy
+3. And Sleect hiting manager
+4. And Select status
+5. And Input candidate name
+6. And Input keywords
+7. And Select Date of Application from
+8. Given Select Date of Application to
+9. Given Select method of application
+10. Then Click button search
+","
+
+
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+36,"Add candidate",Recruitment,6,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:56","1. Given Input first name of candiate
+2. And Input middle name of candiate
+3. And Input last name of candiate
+4. And Input email
+5. And Input contact no
+6. And Select job vacancy
+7. And Upload resume
+8. And Input keywords
+9. And Input comment
+10. And Select Date of Application
+11. And Ckeck/uncheck Consent to keep data
+12. Then Click button save
+","
+
+
+
+
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+37,"Search vacancies",Recruitment,6,"Enggar Frisa",1000,Passed,"2022-08-03 10:29:58","1. Given Select job title
+2. And Select vacancy
+3. And Select hiring manager
+4. And Select status
+5. Then Click button search
+","
+
+
+
+
+","
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+38,"Add vacancy",Recruitment,6,"Enggar Frisa",7000,Passed,"2022-08-03 10:30:07","1. Given Select job title
+2. And Input vacancy name
+3. And Input hiring manager
+4. And Input Number of Positions
+5. And Input description
+6. And CHeck/uncheck publish in RSS feed(1) and web page(2)
+7. Then Click button save
+","
+
+
+
+
+
+
+","
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+39,"Edit personal details","My Info",7,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:09","1. Given Click button edit for personal details
+2. Given Input first name
+3. And Input middle name
+4. And Input last name
+5. And Input employee ID
+6. And Input other ID
+7. And Input Driver's License Number
+8. And Input License Expiry Date
+9. And Input SSN Number
+10. And Input SIN number
+11. And Choose gender
+12. And Select marital status
+13. And Select nationality
+14. And Select date of birth
+15. And Input nick name
+16. And Input Military Service
+17. And Check/uncheck smoker
+18. Then Click button save personal details
+19. Then Click button edit for custom fields
+20. Given Select Blood Type
+21. Then CLick button save custom fields
+22. Then Click button add attachment
+23. Given Upload Select File
+24. And Input comment
+25. Then Click button upload attachment
+","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+40,"Contact details","My Info",7,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:11","1. Given Click button edit contact details
+2. Given Input Address Street 1
+3. And Input Address Street 2
+4. And Input city
+5. And Input state/province
+6. And Input zip/postal code
+7. And Select country
+8. And Input home telephone
+9. And Input mobile
+10. And Input Work Telephone
+11. And Input work email
+12. And Input other email
+13. Then Click button save
+14. Then Click button add attachment
+15. Given Upload attachment
+16. And Input comment
+17. Then Click button upload
+","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+41,"Search KPIs",Performance,8,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:14","1. Given Select job title
+2. Then Click button search
+","
+
+","
+
+",,,"Not set",Normal,"Not automated",Other,,,
+42,"Add Key Performance Indicator",Performance,8,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:16","1. Given Select job title
+2. And Select Key Performance Indicator
+3. And Input Minimum Rating
+4. And Input Maximum Rating
+5. And Check/uncheck Make Default Scale
+6. Then Click button save
+","
+
+
+
+
+
+","
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+43,"Search Performanc Review",Performance,8,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:18","1. Given Input employee name
+2. And Select job title
+3. And Select status
+4. And Select from date
+5. And Select to date
+6. And Input reviewer
+7. Then Click button search
+","
+
+
+
+
+
+
+","
+
+
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+44,"Add reviewer",Performance,8,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:21","1. Given INput Supervisor Reviewer
+2. And Select Work Period Start Date
+3. And Select Work Period End Date
+4. And Select due date
+5. Then CLick button save
+","
+
+
+
+
+","
+
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+45,Directory,Directory,10,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:23","1. Given Input name
+2. And Select job title
+3. And Select location
+4. Then Click button search
+","
+
+
+
+","
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+46,"Purge Employee Records",Maintenance,11,"Enggar Frisa",2000,Passed,"2022-08-03 10:30:26","1. Given Input verifiy password
+2. Then Click button verify
+3. Then Input Past Employee
+4. Then Click button search
+","
+
+
+
+","
+
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+47,"Update status",Buzz,12,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:28","1. Given Input post description
+2. Then CLick button post
+","
+
+","
+
+",,,"Not set",Normal,"Not automated",Other,,,
+48,"Upload images",Buzz,12,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:30","1. Given Input description about image
+2. And Select images
+3. Then CLick button post
+","
+
+
+","
+
+
+",,,"Not set",Normal,"Not automated",Other,,,
+49,"Share video",Buzz,12,"Enggar Frisa",1000,Passed,"2022-08-03 10:30:33","1. Given Input link video want to post
+","
+","
+",,,"Not set",Normal,"Not automated",Other,,,
