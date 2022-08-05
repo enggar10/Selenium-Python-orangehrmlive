@@ -1,5 +1,6 @@
 #from dbm.ndbm import library
 import dbm
+from multiprocessing.sharedctypes import Value
 from tarfile import PAX_NAME_FIELDS
 import unittest
 import time
@@ -17,13 +18,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 url="https://opensource-demo.orangehrmlive.com/"
 username="Admin"
 password="admin123"
-title="manager"
-desk="mengerjakan semua tugas pegawai"
-note="isilah"
-
-#driver = webdriver.Chrome(executable_path="C:\Users\Enggar\python\chromedriver.exe")
-
-
 
 
 class TestLogin(unittest.TestCase):
@@ -58,44 +52,60 @@ class TestLogin(unittest.TestCase):
         a.move_to_element(o).click().perform()
         time.sleep(2)
 
+        
+        
+              
         select_element = driver.find_element(By.ID,"leave_balance_report_type") #select dropdown
         select_object = Select (select_element)
         select_object.select_by_value('1')
-        time.sleep(2)
+        time.sleep(5)
 
+        
         select_element = driver.find_element(By.ID,"leave_balance_leave_type") #select dropdown
         select_object = Select (select_element)
         select_object.select_by_value('10')
-        time.sleep(2)
 
         select_element = driver.find_element(By.ID,"period") #select dropdown
         select_object = Select (select_element)
         select_object.select_by_value('2021-01-01$$2021-12-31')
-        time.sleep(2)
 
         select_element = driver.find_element(By.ID,"leave_balance_job_title") #select dropdown
         select_object = Select (select_element)
-        select_object.select_by_value('0')
-        time.sleep(2)
+        select_object.select_by_value('9')
 
         select_element = driver.find_element(By.ID,"leave_balance_location") #select dropdown
         select_object = Select (select_element)
         select_object.select_by_value('-1')
-        time.sleep(2)
 
         select_element = driver.find_element(By.ID,"leave_balance_sub_unit") #select dropdown
         select_object = Select (select_element)
         select_object.select_by_value('0')
-        time.sleep(2)        
 
         driver.find_element(By.ID,"leave_balance_include_terminated").click()
-        time.sleep(2)
-
+        time.sleep(3)  
 
         driver.find_element(By.ID,"viewBtn").click()
-        time.sleep(3)
+        time.sleep(5)       
 
+
+        
+        select_element = driver.find_element(By.ID,"leave_balance_report_type") #select dropdown
+        select_object = Select (select_element)
+        select_object.select_by_value('2')
+        time.sleep(5)
+
+        driver.execute_script("document.getElementById('leave_balance_employee_empName').focus()") #set fokus autocomplete
+        driver.find_element(By.NAME,"leave_balance[employee][empName]").send_keys('a') #insert value
+        time.sleep(3)
+        driver.execute_script("document.getElementsByClassName('ac_even')[0].click()") #select value autocomplete
+        time.sleep(5)
+
+        select_element = driver.find_element(By.ID,"period") #select dropdown
+        select_object = Select (select_element)
+        select_object.select_by_value('2021-01-01$$2021-12-31')
          
+        driver.find_element(By.ID,"viewBtn").click()
+        time.sleep(10)
 
     def tearDown(self): 
         self.driver.close()
